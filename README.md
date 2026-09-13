@@ -8,7 +8,7 @@ Port Sentinel（端口监测）是一款 Windows 桌面入站连接监控工具�
 
 Port Sentinel is a Windows desktop inbound connection monitor for users and administrators investigating unfamiliar IP addresses, repeated Remote Desktop connections, port probes, and growing log files. The application UI is currently in Simplified Chinese; this page and the installation guide provide Chinese and English instructions.
 
-[下载最新版 / Download latest](https://github.com/zuelu/port-sentinel/releases/latest) · [安装与使用 / Installation & usage](INSTALL.md) · [更新日志 / Changelog](CHANGELOG.md) · [反馈问题 / Report an issue](https://github.com/zuelu/port-sentinel/issues)
+[下载最新版 / Download latest](https://github.com/zuelu/port-sentinel/releases/latest) · [界面截图 / Screenshots](#screenshots) · [安装与使用 / Installation & usage](INSTALL.md) · [更新日志 / Changelog](CHANGELOG.md) · [反馈问题 / Report an issue](https://github.com/zuelu/port-sentinel/issues)
 
 ## 快速开始 / Quick start
 
@@ -22,6 +22,85 @@ Port Sentinel is a Windows desktop inbound connection monitor for users and admi
 运行要求：Windows 10/11 **x64**、.NET Framework **4.8 或更新版本**、管理员权限。无需安装 Python、Npcap 或浏览器扩展。完整 ZIP 推荐用于首次安装；单独的 EXE 适合已有地理库的更新场景。
 
 Requirements: Windows 10/11 **x64**, .NET Framework **4.8 or later**, and administrator permission. No Python, Npcap, or browser extension is required. The complete ZIP is recommended for a first installation; the standalone EXE is useful when updating an existing installation with its geolocation database.
+
+<a id="screenshots"></a>
+## 功能页面截图 / Feature screenshots
+
+以下展示 v1.3.1 的 9 个功能页面，均使用虚构演示数据。截图中的地址、连接、规则和主机信息仅用于说明界面，不代表真实流量或相关服务的行为。点击图片可查看大图。
+
+These screenshots show all nine feature pages in v1.3.1 using fictional sample data. Addresses, connections, rules, and host details illustrate the interface only; they do not represent actual traffic or the behavior of the named services. Click an image to view it at full size.
+
+### 实时端口监测 / Live port monitoring
+
+查看最新入站事件、端口、来源 IP、归属地以及当前封禁/名单标签，支持筛选和自动滚动。
+
+View recent inbound events, ports, source IPs, locations, and current block/list badges, with filtering and automatic scrolling.
+
+[![Port Sentinel 实时端口监控与 IP 状态标签 / Windows live port monitor and IP status badges](screenshots/live-monitor.png)](screenshots/live-monitor.png)
+
+### 连接历史日志 / Connection history
+
+按日期、端口、IP、协议和状态查询连接记录；示例展示 3389 端口筛选及 CSV 导出入口。
+
+Search connection records by date, port, IP, protocol, and state. This example shows the port 3389 filter and the CSV export control.
+
+[![3389 RDP 连接历史日志筛选 / Port 3389 RDP connection history filters](screenshots/connection-history.png)](screenshots/connection-history.png)
+
+### 来源 IP 统计 / Per-IP statistics
+
+比较来源 IP 的尝试次数、TCP 连接、认证失败、涉及端口及首次/最近出现时间。
+
+Compare source IPs by attempts, established TCP connections, authentication failures, destination ports, and first/last seen times.
+
+[![来源 IP 连接次数与认证失败统计 / Source IP connection counts and authentication-failure statistics](screenshots/ip-statistics.png)](screenshots/ip-statistics.png)
+
+### 手动封禁管理 / Manual IP block management
+
+为单 IP、CIDR 网段或地址范围设置期限，查看当前状态、剩余时长和解除入口。
+
+Set durations for individual IPs, CIDR networks, or address ranges, and inspect current state, remaining time, and removal controls.
+
+[![Windows IP 封禁管理与限时解除 / Windows IP blocking and timed removal](screenshots/ip-blocking.png)](screenshots/ip-blocking.png)
+
+### 自动封禁规则 / Automatic IP blocking rules
+
+配置端口、计数方式、时间窗口、次数阈值和封禁时长，总开关与单条规则开关分别控制。
+
+Configure ports, counting mode, time window, threshold, and block duration. The master switch and individual rule switches are separate.
+
+[![按端口连接频率自动封禁 IP / Automatic IP blocking based on port connection frequency](screenshots/automatic-blocking.png)](screenshots/automatic-blocking.png)
+
+### 黑白名单 / Allowlist and blocklist
+
+集中管理可信来源与持续封禁范围，查看归属地、状态和备注。
+
+Manage trusted sources and persistent block ranges in one place, with locations, states, and notes.
+
+[![IP 黑名单白名单管理 / IP allowlist and blocklist management](screenshots/allow-block-lists.png)](screenshots/allow-block-lists.png)
+
+### 全球来源大屏 / Global source dashboard
+
+用地图、动态连线、7 日趋势和来源排行观察本机收到的事件；顶部显示出口定位信息，支持全屏。
+
+Observe events received by the computer through a map, animated paths, a 7-day trend, and source rankings. Outbound location information appears above the map, with fullscreen support.
+
+[![全球来源地图、出口 IP 定位与连接趋势 / Global source map, outbound IP location, and connection trends](screenshots/global-dashboard.png)](screenshots/global-dashboard.png)
+
+### 存储维护与日志保留 / Storage maintenance and log retention
+
+设置历史保留天数、自动清理和备份，并管理离线 IP 地理库。
+
+Configure retention days, automatic cleanup, and backups, and manage the offline IP geolocation database.
+
+[![端口监控日志自动清理、备份与离线地理库 / Port-monitor log cleanup, backups, and offline geolocation](screenshots/storage-retention.png)](screenshots/storage-retention.png)
+
+### 采集状态、托盘与自启 / Capture status, tray operation, and startup
+
+查看采集能力和存储位置，配置当前用户登录自启，并了解窗口收起到托盘的行为。
+
+Inspect capture capabilities and storage location, configure startup at the current user's sign-in, and review how closing the window hides it to the tray.
+
+[![Windows 端口监测采集状态与登录自启设置 / Windows port-monitor capture status and startup settings](screenshots/collection-settings.png)](screenshots/collection-settings.png)
 
 ## 功能与使用场景 / Features and use cases
 
