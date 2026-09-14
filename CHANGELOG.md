@@ -1,5 +1,22 @@
 # 更新日志 / Changelog
 
+## v1.5.1 — 2026-09-14
+
+- 修复IP统计中对象型表头及悬停说明的漏译。
+  Fixed untranslated object-based IP statistics headers and tooltips.
+- 修复列表右键菜单及弹出界面的翻译路径，打开菜单时再次应用当前语言。
+  Fixed localization of list context menus and popup surfaces, applying the current language when menus open.
+- 提示正文与标题在创建时翻译，启动前提示也使用对应语言的确认按钮；补充操作记录窗口和文件选择标题。
+  Prompt bodies and titles are localized at creation, including localized confirmation buttons before startup. Operation-log windows and file-picker titles are also covered.
+- 19语言菜单、表头和提示专项验证通过；确认默认值、返回结果及用户数据保持不变。
+  Dedicated header, menu, and prompt checks passed across 19 languages. Confirmation defaults, results, and user data remain unchanged.
+
+系统原生文件选择器的系统按钮仍由Windows语言决定。
+
+Operating-system buttons in native file pickers still follow the Windows language.
+
+[下载 v1.5.1 / Download v1.5.1](https://github.com/zuelu/port-sentinel/releases/tag/v1.5.1)
+
 ## v1.5.0 — 2026-09-14
 
 - 新增每次启动一次的 GitHub 正式版检测，发现新版时提供提示和下载入口；托盘启动显示通知，不自动下载或安装。

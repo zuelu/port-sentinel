@@ -12,8 +12,8 @@ Port Sentinel is a Windows desktop inbound connection monitor for users and admi
 
 ## 快速开始 / Quick start
 
-1. 从 [v1.5.0 Release](https://github.com/zuelu/port-sentinel/releases/tag/v1.5.0) 下载 **PortSentinel-v1.5.0-windows-x64.zip**，解压到可写的固定目录。
-   Download **PortSentinel-v1.5.0-windows-x64.zip** from the [v1.5.0 release](https://github.com/zuelu/port-sentinel/releases/tag/v1.5.0) and extract it to a stable, writable folder.
+1. 从 [v1.5.1 Release](https://github.com/zuelu/port-sentinel/releases/tag/v1.5.1) 下载 **PortSentinel-v1.5.1-windows-x64.zip**，解压到可写的固定目录。
+   Download **PortSentinel-v1.5.1-windows-x64.zip** from the [v1.5.1 release](https://github.com/zuelu/port-sentinel/releases/tag/v1.5.1) and extract it to a stable, writable folder.
 2. 运行 **PortSentinel.exe**，在 Windows 提示时允许管理员权限；保持 `GeoData` 和 `Languages` 文件夹与 EXE 同目录。
    Run **PortSentinel.exe** and grant administrator permission when Windows asks. Keep the `GeoData` and `Languages` folders beside the EXE.
 3. 在“实时监测”输入本机端口，如 `3389`，点击“筛选”。在“历史日志”和“IP 统计”按日期、端口或 IP 回查。
@@ -43,9 +43,9 @@ Language packs live in `Languages`, work offline, and can be customized. See the
 <a id="screenshots"></a>
 ## 功能页面截图 / Feature screenshots
 
-以下展示 v1.5.0 的 9 个功能页面，均使用虚构演示数据。截图中的地址、连接、规则和主机信息仅用于说明界面，不代表真实流量或相关服务的行为。点击图片可查看大图。
+以下展示 v1.5.1 的 9 个功能页面，均使用虚构演示数据。截图中的地址、连接、规则和主机信息仅用于说明界面，不代表真实流量或相关服务的行为。点击图片可查看大图。
 
-These screenshots show all nine feature pages in v1.5.0 using fictional sample data. Addresses, connections, rules, and host details illustrate the interface only; they do not represent actual traffic or the behavior of the named services. Click an image to view it at full size.
+These screenshots show all nine feature pages in v1.5.1 using fictional sample data. Addresses, connections, rules, and host details illustrate the interface only; they do not represent actual traffic or the behavior of the named services. Click an image to view it at full size.
 
 ### 实时端口监测 / Live port monitoring
 
