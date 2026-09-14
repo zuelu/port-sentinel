@@ -4,31 +4,48 @@
 
 **See who is connecting to your Windows PC: live port logs, port 3389/RDP connection records, per-IP statistics, automatic IP blocking, and a global source map.**
 
-Port Sentinel（端口监测）是一款 Windows 桌面入站连接监控工具，适合需要排查陌生 IP 访问、远程桌面重复连接、端口探测和长期日志增长的个人用户及管理员。程序界面为简体中文；本页和安装指南提供中文与英文说明。
+Port Sentinel（端口监测）是一款 Windows 桌面入站连接监控工具，适合需要排查陌生 IP 访问、远程桌面重复连接、端口探测和长期日志增长的个人用户及管理员。支持 19 种界面语言，左侧版本号上方可即时切换并自动记住选择；本页和安装指南提供中文与英文说明。
 
-Port Sentinel is a Windows desktop inbound connection monitor for users and administrators investigating unfamiliar IP addresses, repeated Remote Desktop connections, port probes, and growing log files. The application UI is currently in Simplified Chinese; this page and the installation guide provide Chinese and English instructions.
+Port Sentinel is a Windows desktop inbound connection monitor for users and administrators investigating unfamiliar IP addresses, repeated Remote Desktop connections, port probes, and growing log files. The interface supports 19 languages with instant switching above the sidebar version number and automatic preference saving. This page and the installation guide are available in Chinese and English.
 
 [下载最新版 / Download latest](https://github.com/zuelu/port-sentinel/releases/latest) · [界面截图 / Screenshots](#screenshots) · [安装与使用 / Installation & usage](INSTALL.md) · [更新日志 / Changelog](CHANGELOG.md) · [反馈问题 / Report an issue](https://github.com/zuelu/port-sentinel/issues)
 
 ## 快速开始 / Quick start
 
-1. 从 [v1.3.1 Release](https://github.com/zuelu/port-sentinel/releases/tag/v1.3.1) 下载 **PortSentinel-v1.3.1-windows-x64.zip**，解压到可写的固定目录。
-   Download **PortSentinel-v1.3.1-windows-x64.zip** from the [v1.3.1 release](https://github.com/zuelu/port-sentinel/releases/tag/v1.3.1) and extract it to a stable, writable folder.
-2. 运行 **PortSentinel.exe**，在 Windows 提示时允许管理员权限；保持 `GeoData` 文件夹与 EXE 同目录。
-   Run **PortSentinel.exe** and grant administrator permission when Windows asks. Keep the `GeoData` folder beside the EXE.
+1. 从 [v1.4.0 Release](https://github.com/zuelu/port-sentinel/releases/tag/v1.4.0) 下载 **PortSentinel-v1.4.0-windows-x64.zip**，解压到可写的固定目录。
+   Download **PortSentinel-v1.4.0-windows-x64.zip** from the [v1.4.0 release](https://github.com/zuelu/port-sentinel/releases/tag/v1.4.0) and extract it to a stable, writable folder.
+2. 运行 **PortSentinel.exe**，在 Windows 提示时允许管理员权限；保持 `GeoData` 和 `Languages` 文件夹与 EXE 同目录。
+   Run **PortSentinel.exe** and grant administrator permission when Windows asks. Keep the `GeoData` and `Languages` folders beside the EXE.
 3. 在“实时监测”输入本机端口，如 `3389`，点击“筛选”。在“历史日志”和“IP 统计”按日期、端口或 IP 回查。
    In **实时监测 (Live Monitor)**, enter a local port such as `3389` and select **筛选 (Filter)**. Use **历史日志 (History)** and **IP 统计 (IP Statistics)** to search by date, port, or IP.
 
-运行要求：Windows 10/11 **x64**、.NET Framework **4.8 或更新版本**、管理员权限。无需安装 Python、Npcap 或浏览器扩展。完整 ZIP 推荐用于首次安装；单独的 EXE 适合已有地理库的更新场景。
+运行要求：Windows 10/11 **x64**、.NET Framework **4.8 或更新版本**、管理员权限。无需安装 Python、Npcap 或浏览器扩展。完整 ZIP 推荐用于首次安装；单独的 EXE 适合已有地理库及语言包的更新场景。
 
-Requirements: Windows 10/11 **x64**, .NET Framework **4.8 or later**, and administrator permission. No Python, Npcap, or browser extension is required. The complete ZIP is recommended for a first installation; the standalone EXE is useful when updating an existing installation with its geolocation database.
+Requirements: Windows 10/11 **x64**, .NET Framework **4.8 or later**, and administrator permission. No Python, Npcap, or browser extension is required. The complete ZIP is recommended for a first installation; the standalone EXE is useful when updating an existing installation with its geolocation database and language packs.
+
+
+## 多语言与语言记忆 / Languages and remembered preferences
+
+在左侧版本号上方选择语言，导航、页面、列表状态、提示和托盘菜单即时更新，无需重启监测。选择会自动保存，完全退出后再次启动会恢复最后使用的语言。语言切换不会更改筛选值、用户输入、封禁规则或历史记录。
+
+Choose a language above the sidebar version number. Navigation, pages, list states, prompts, and the tray menu update immediately without restarting monitoring. Your selection is saved automatically and restored at the next launch. Switching does not change filter values, user input, blocking rules, or recorded history.
+
+支持简体中文、英语、繁体中文、日语、韩语、德语、法语、西班牙语、葡萄牙语、俄语、意大利语、土耳其语、阿拉伯语、印地语、印度尼西亚语、越南语、泰语、波兰语、荷兰语。中文第一、英文第二，其余语言按语言包排列。
+
+Available languages: Simplified Chinese, English, Traditional Chinese, Japanese, Korean, German, French, Spanish, Portuguese, Russian, Italian, Turkish, Arabic, Hindi, Indonesian, Vietnamese, Thai, Polish, and Dutch. Simplified Chinese is first and English second; other languages follow in language-pack order.
+
+语言包位于 `Languages`，可离线使用和自行调整；参见[语言包指南 / Language pack guide](LANGUAGES.md)。部分翻译为自动翻译，欢迎反馈措辞问题。
+
+Language packs live in `Languages`, work offline, and can be customized. See the [language pack guide](LANGUAGES.md). Some translations are machine-generated; wording corrections are welcome.
+
+[![Port Sentinel 英文多语言界面与语言选择 / English multilingual interface and language selector](screenshots/live-monitor-en.png)](screenshots/live-monitor-en.png)
 
 <a id="screenshots"></a>
 ## 功能页面截图 / Feature screenshots
 
-以下展示 v1.3.1 的 9 个功能页面，均使用虚构演示数据。截图中的地址、连接、规则和主机信息仅用于说明界面，不代表真实流量或相关服务的行为。点击图片可查看大图。
+以下展示 v1.4.0 的 9 个功能页面，均使用虚构演示数据。截图中的地址、连接、规则和主机信息仅用于说明界面，不代表真实流量或相关服务的行为。点击图片可查看大图。
 
-These screenshots show all nine feature pages in v1.3.1 using fictional sample data. Addresses, connections, rules, and host details illustrate the interface only; they do not represent actual traffic or the behavior of the named services. Click an image to view it at full size.
+These screenshots show all nine feature pages in v1.4.0 using fictional sample data. Addresses, connections, rules, and host details illustrate the interface only; they do not represent actual traffic or the behavior of the named services. Click an image to view it at full size.
 
 ### 实时端口监测 / Live port monitoring
 
@@ -185,3 +202,7 @@ For Windows inbound port logging, RDP connection monitoring, or frequency-based 
 作者：云遮天，Telegram：@czzzru，QQ：80795151，网站：[https://czzz.ru](https://czzz.ru)
 
 Author: 云遮天 (Yun Zhe Tian) · Telegram: @czzzru · QQ: 80795151 · Website: [https://czzz.ru](https://czzz.ru)
+
+打赏钱包（TRON）：`TUVPxWsTSRLryZJq9PdmnvDoQjAURTRopn`
+
+Donation wallet (TRON network): `TUVPxWsTSRLryZJq9PdmnvDoQjAURTRopn`

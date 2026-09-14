@@ -1,5 +1,26 @@
 # 更新日志 / Changelog
 
+## v1.4.0 — 2026-09-14
+
+- 新增 19 种界面语言与离线 JSON 语言包，简体中文第一、英语第二。
+  Added 19 interface languages and offline JSON language packs, with Simplified Chinese first and English second.
+- 左侧版本号上方即时切换语言，页面、列表状态、提示、确认按钮与托盘菜单同步更新，无需重启监测。
+  Switch instantly above the sidebar version number. Pages, list states, prompts, confirmation buttons, and tray menus update without restarting monitoring.
+- 自动记住最后选择的语言，完全退出后再次启动自动恢复。
+  The last language selection is saved automatically and restored after a complete exit and relaunch.
+- 地理名称使用数据库中可用的对应语言；长译文导航支持换行，阿拉伯语文字支持从右至左显示。
+  Geographical names use available localized database names. Long navigation labels wrap, and Arabic text supports right-to-left display.
+- 作者区新增可复制的 TRON 打赏地址。
+  Added a selectable TRON donation address to the author section.
+- 原有监测、筛选、统计、封禁、名单、存储与自启功能保持不变。
+  Existing monitoring, filtering, statistics, blocking, lists, storage, and startup behavior is unchanged.
+
+部分语言使用自动翻译；日期输入仍为 `yyyy-MM-dd`，原始日志与用户输入不改写。
+
+Some languages use machine-generated translations. Date input remains `yyyy-MM-dd`, and raw logs and user input are not rewritten.
+
+[下载 v1.4.0 / Download v1.4.0](https://github.com/zuelu/port-sentinel/releases/tag/v1.4.0) · [语言包指南 / Language pack guide](LANGUAGES.md)
+
 ## v1.3.1 — 2026-09-13
 
 ### 新增与改进 / Added and improved

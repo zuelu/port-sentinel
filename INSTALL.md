@@ -12,24 +12,34 @@ This guide explains how to install the Windows port monitor, inspect port 3389/R
 - 管理员权限，用于网卡捕获及防火墙规则管理。/ Administrator permission for network-interface capture and firewall-rule management.
 - 一个可写的固定目录，并为地理库、日志和备份保留空间。/ A stable, writable folder with space for the geolocation database, logs, and backups.
 
-界面目前使用简体中文，以下英文说明保留按钮中文名称便于对照。软件无需 Python 或 Npcap。地理库约 121 MB，日志体积取决于流量和保留天数。
+界面支持 19 种语言，以下说明保留中文名称及英文对照。软件无需 Python 或 Npcap。地理库约 121 MB，日志体积取决于流量和保留天数。
 
-The UI is currently in Simplified Chinese; English instructions retain the Chinese control labels so you can find them. Python and Npcap are not required. The geolocation database is approximately 121 MB; log size depends on traffic and retention settings.
+The UI supports 19 languages. Instructions show Chinese control labels with English equivalents for reference. Python and Npcap are not required. The geolocation database is approximately 121 MB; log size depends on traffic and retention settings.
 
 ## 下载与启动 / Download and launch
 
-1. 打开 [Releases](https://github.com/zuelu/port-sentinel/releases/latest)，下载完整的 `PortSentinel-v1.3.1-windows-x64.zip`。
-   Open [Releases](https://github.com/zuelu/port-sentinel/releases/latest) and download the complete `PortSentinel-v1.3.1-windows-x64.zip`.
+1. 打开 [Releases](https://github.com/zuelu/port-sentinel/releases/latest)，下载完整的 `PortSentinel-v1.4.0-windows-x64.zip`。
+   Open [Releases](https://github.com/zuelu/port-sentinel/releases/latest) and download the complete `PortSentinel-v1.4.0-windows-x64.zip`.
 2. 先完整解压，不要直接在 ZIP 内运行程序。
    Extract the archive completely; do not run the application from inside the ZIP.
-3. 保持 `PortSentinel.exe` 与 `GeoData/dbip-city-lite.mmdb` 的相对位置不变。
+3. 保持 `PortSentinel.exe`、`GeoData/dbip-city-lite.mmdb` 与 `Languages` 文件夹的相对位置不变。
    Keep `PortSentinel.exe` and `GeoData/dbip-city-lite.mmdb` in their extracted relative locations.
 4. 双击 EXE，在 Windows 提示时允许管理员运行。程序启动后开始采集本机入站事件。
    Double-click the EXE and grant administrator permission when prompted. Collection of local inbound events starts after launch.
 
-Release 中也提供单独的 `PortSentinel.exe`。首次使用建议选择完整 ZIP；仅下载 EXE 时，基础监测仍可运行，但需要另行导入城市 MMDB 才能显示地理位置。
+Release 中也提供单独的 `PortSentinel.exe`。首次使用建议选择完整 ZIP；仅下载 EXE 时，基础监测仍可运行，但需要另行导入城市 MMDB 才能显示地理位置，并保留 `Languages` 文件夹才能选择其他语言。
 
-The release also includes a standalone `PortSentinel.exe`. Choose the complete ZIP for a first installation. With only the EXE, basic monitoring is available, but a City MMDB must be supplied separately for geolocation.
+The release also includes a standalone `PortSentinel.exe`. Choose the complete ZIP for a first installation. With only the EXE, basic monitoring is available, but a City MMDB must be supplied separately for geolocation, and the `Languages` folder is needed to select additional languages.
+
+## 切换语言与记住选择 / Switch language and remember your choice
+
+在左侧版本号上方打开语言下拉框。选择后界面即时更新，监测继续运行。程序会在同目录保存 `ui-language.txt`；关闭到托盘和完全退出均不丢失选择，再次启动自动恢复。升级时保留此文件并更新 `Languages` 文件夹。
+
+Open the language selector above the sidebar version number. The interface updates immediately while monitoring continues. The application saves `ui-language.txt` beside the EXE. Hiding to the tray or exiting completely retains your choice, which is restored at the next launch. Keep this file and update the `Languages` folder when upgrading.
+
+日期输入仍使用 `yyyy-MM-dd`，端口、IP、用户备注和日志中的原始值不随界面语言改变。语言包缺少条目时回退英文，语言包不可用时回退简体中文。更多信息见[语言包指南 / Language pack guide](LANGUAGES.md)。
+
+Dates still use `yyyy-MM-dd`. Ports, IPs, user notes, and stored raw values do not change with the UI language. Missing translation entries fall back to English; unavailable language packs fall back to Simplified Chinese. See the [language pack guide](LANGUAGES.md) for details.
 
 ## 查看端口与 RDP 连接日志 / View port and RDP connection logs
 
