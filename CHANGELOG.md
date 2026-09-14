@@ -1,5 +1,22 @@
 # 更新日志 / Changelog
 
+## v1.4.1 — 2026-09-14
+
+- 修复实时监测、历史日志、IP统计、封禁、自动规则和名单列表中动态状态及来源的漏译，刷新、滚动与新增记录继续使用所选语言。
+  Fixed untranslated dynamic states and sources in live, history, IP statistics, block, rule, and list views. Refreshing, scrolling, and new records retain the selected language.
+- 补齐19种语言的事件说明、封禁状态、数值时长、规则条件和采集能力模板。
+  Completed event-detail, block-state, numeric-duration, rule-condition, and capture-capability templates in all 19 languages.
+- 修复下拉选项、大屏动态提示、存储状态和详情窗口的漏译。
+  Fixed untranslated dropdown labels, dynamic dashboard messages, storage states, and detail windows.
+- 默认规则名跟随界面语言；用户改写的规则名和备注保持原样。时区显示改用稳定的系统ID和实际UTC偏移。
+  The suggested rule name follows the interface language, while user-edited names and notes stay unchanged. Timezone display uses a stable system ID and actual UTC offset.
+
+升级请同时更新 EXE 和 `Languages` 文件夹；保留数据库、地理库及 `ui-language.txt`。
+
+Update both the EXE and the `Languages` folder. Retain databases, geolocation data, and `ui-language.txt`.
+
+[下载 v1.4.1 / Download v1.4.1](https://github.com/zuelu/port-sentinel/releases/tag/v1.4.1)
+
 ## v1.4.0 — 2026-09-14
 
 - 新增 19 种界面语言与离线 JSON 语言包，简体中文第一、英语第二。

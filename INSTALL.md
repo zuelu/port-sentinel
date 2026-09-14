@@ -18,8 +18,8 @@ The UI supports 19 languages. Instructions show Chinese control labels with Engl
 
 ## 下载与启动 / Download and launch
 
-1. 打开 [Releases](https://github.com/zuelu/port-sentinel/releases/latest)，下载完整的 `PortSentinel-v1.4.0-windows-x64.zip`。
-   Open [Releases](https://github.com/zuelu/port-sentinel/releases/latest) and download the complete `PortSentinel-v1.4.0-windows-x64.zip`.
+1. 打开 [Releases](https://github.com/zuelu/port-sentinel/releases/latest)，下载完整的 `PortSentinel-v1.4.1-windows-x64.zip`。
+   Open [Releases](https://github.com/zuelu/port-sentinel/releases/latest) and download the complete `PortSentinel-v1.4.1-windows-x64.zip`.
 2. 先完整解压，不要直接在 ZIP 内运行程序。
    Extract the archive completely; do not run the application from inside the ZIP.
 3. 保持 `PortSentinel.exe`、`GeoData/dbip-city-lite.mmdb` 与 `Languages` 文件夹的相对位置不变。
