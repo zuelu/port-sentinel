@@ -18,8 +18,8 @@ The UI supports 19 languages. Instructions show Chinese control labels with Engl
 
 ## 下载与启动 / Download and launch
 
-1. 打开 [Releases](https://github.com/zuelu/port-sentinel/releases/latest)，下载完整的 `PortSentinel-v1.4.1-windows-x64.zip`。
-   Open [Releases](https://github.com/zuelu/port-sentinel/releases/latest) and download the complete `PortSentinel-v1.4.1-windows-x64.zip`.
+1. 打开 [Releases](https://github.com/zuelu/port-sentinel/releases/latest)，下载完整的 `PortSentinel-v1.5.0-windows-x64.zip`。
+   Open [Releases](https://github.com/zuelu/port-sentinel/releases/latest) and download the complete `PortSentinel-v1.5.0-windows-x64.zip`.
 2. 先完整解压，不要直接在 ZIP 内运行程序。
    Extract the archive completely; do not run the application from inside the ZIP.
 3. 保持 `PortSentinel.exe`、`GeoData/dbip-city-lite.mmdb` 与 `Languages` 文件夹的相对位置不变。
@@ -40,6 +40,16 @@ Open the language selector above the sidebar version number. The interface updat
 日期输入仍使用 `yyyy-MM-dd`，端口、IP、用户备注和日志中的原始值不随界面语言改变。语言包缺少条目时回退英文，语言包不可用时回退简体中文。更多信息见[语言包指南 / Language pack guide](LANGUAGES.md)。
 
 Dates still use `yyyy-MM-dd`. Ports, IPs, user notes, and stored raw values do not change with the UI language. Missing translation entries fall back to English; unavailable language packs fall back to Simplified Chinese. See the [language pack guide](LANGUAGES.md) for details.
+
+## 启动版本检测 / Startup update check
+
+每次启动后自动检查一次 GitHub 最新正式版。发现更新时，顶部显示提示和“前往下载”按钮；托盘启动时显示通知区提示，恢复窗口后仍可找到下载入口。不会自动下载、安装或替换文件。检测失败不影响采集；只恢复托盘窗口不重复检查。
+
+Each launch checks the latest stable GitHub release once. An update shows a banner and a download button. Tray startup uses a notification, and the download link remains available after restoring the window. Files are not automatically downloaded, installed, or replaced. Check failures do not interrupt monitoring, and tray restoration does not trigger another check.
+
+版本检测仅请求公开版本信息，不需要 GitHub key，也不发送本机日志、地址清单或封禁配置。请仍按升级说明备份并保留数据与语言偏好。
+
+The checker requests only public release information. It does not require a GitHub key or send local logs, address lists, or blocking settings. Follow the update instructions to back up and retain your data and language preference.
 
 ## 查看端口与 RDP 连接日志 / View port and RDP connection logs
 

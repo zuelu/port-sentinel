@@ -1,5 +1,22 @@
 # 更新日志 / Changelog
 
+## v1.5.0 — 2026-09-14
+
+- 新增每次启动一次的 GitHub 正式版检测，发现新版时提供提示和下载入口；托盘启动显示通知，不自动下载或安装。
+  Added one stable GitHub release check per launch, with an update prompt and download link. Tray startup uses a notification; download and installation remain manual.
+- 检测失败不影响监测，不需要 GitHub key，也不发送日志、地址清单或封禁配置。
+  Check failures do not interrupt monitoring. No GitHub key is needed, and logs, address lists, and blocking settings are not sent.
+- 作者信息新增可点击的仓库地址，保留联系方式、网站与 TRON 打赏钱包。
+  Added a clickable repository link to the author section, retaining contacts, website, and the TRON donation wallet.
+- 包含动态列表、下拉选项、日志说明、时长、规则条件、大屏、采集和存储状态的19语言覆盖修复。
+  Includes 19-language fixes for dynamic lists, dropdowns, event details, durations, rule conditions, dashboards, capture capabilities, and storage states.
+
+升级请同时更新 EXE 与 `Languages`，保留数据库、地理库和 `ui-language.txt`。
+
+Update both the EXE and `Languages`, retaining databases, geolocation data, and `ui-language.txt`.
+
+[下载 v1.5.0 / Download v1.5.0](https://github.com/zuelu/port-sentinel/releases/tag/v1.5.0)
+
 ## v1.4.1 — 2026-09-14
 
 - 修复实时监测、历史日志、IP统计、封禁、自动规则和名单列表中动态状态及来源的漏译，刷新、滚动与新增记录继续使用所选语言。
